@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Turnos medicos</title>
+  </head>
+  <body>
+    <header>
+      <button class="button" onclick="sacarTurno();"> Solicitar turno </button>
+    </header>
+
+    <main>
+      <form action="" class="formulario">
+        <h1>Registro</h1>
+        <input placeholder="Nombre" type="text" id="inputNombre" class="formulario_input"> 
+        <input placeholder="Apellido" type="text" class="formulario_input">
+        <input placeholder="Documento" type="number" id="inputID" class="formulario_input">
+        <h3 class="formulario_titulo">Seleccione el area</h3>
+        <div class="container_areas">
+          <select name="area" id="area">
+            <option value="Guardia">Guardia</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Oftalmología">Oftalmología</option>
+            <option value="Ginecología">Ginecología</option>
+            <option value="Dermatología">Dermatología</option>
+          </select>
+        </div>
+        <h3 class="formulario_titulo">Doctores</h3>
+        <div class="container_turnos">
+          <button id="turnoM">Turno Mañana</button>
+          <button id="turnoT">Turno Tarde</button>
+          <button id="mybutton">boton</button>
+        </div>
+        <input type="submit" id="RegistrarTurno" class="formulario_submit">
+
+        
+      </form>
+    </main>
+
+    <footer>       
+    </footer>
+    <script src="js/agenda.js"></script> 
+    <script src="js/formulario.js"></script>
+  </body>
+
+</html>
