@@ -15,9 +15,9 @@
 
     <main>
       <form action="" class="formulario">
-        <h1>Registro</h1>
+        <h1>Solicitar turno</h1>
         <input placeholder="Nombre" type="text" id="inputNombre" class="formulario_input"> 
-        <input placeholder="Apellido" type="text" class="formulario_input">
+        <input placeholder="Apellido" type="text" id="inputApellido" class="formulario_input">
         <input placeholder="Documento" type="number" id="inputID" class="formulario_input">
         <h3 class="formulario_titulo">Seleccione el area</h3>
         <div class="container_areas">
@@ -29,11 +29,14 @@
             <option value="Dermatología">Dermatología</option>
           </select>
         </div>
-        <h3 class="formulario_titulo">Doctores</h3>
         <div class="container_turnos">
-          <button id="turnoM">Turno Mañana</button>
-          <button id="turnoT">Turno Tarde</button>
-          <button id="mybutton">boton</button>
+          <h3 class="formulario_titulo">Fecha y horario</h3>
+          <label for="calendario"></label>
+          <input type="date" id="calendario" name="trip-start" value="2023-07-22" min="2023-01-01" max="2023-12-31">
+          <select name="turno" id="turno">
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+          </select>
         </div>
         <input type="submit" id="RegistrarTurno" class="formulario_submit">
 
@@ -42,8 +45,7 @@
     </main>
 
     <footer>       
-    </footer>
-    <script src="js/agenda.js"></script> 
+    </footer> 
     <script src="js/formulario.js"></script>
   </body>
 
