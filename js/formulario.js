@@ -7,6 +7,7 @@ btnRegistrar.onclick = (event) => {
     let id = document.getElementById("inputID").value
     let area = document.getElementById("area").value
     let turno = document.getElementById("turno").value
+    let calendario = document.getElementById("calendario").value
 
     let usuario = {
         nombre: nombre,
@@ -14,10 +15,11 @@ btnRegistrar.onclick = (event) => {
         id: id,
         area: area,
         turno: turno, 
+        calendario: calendario
     }
 
     localStorage.setItem("user", JSON.stringify(usuario))
     event.preventDefault()
-    alert('Ya reservaste el turno con el ID:'+ id +' ' +today )
+    alert(nombre +', ya has reservado el turno con el ID: '+ id +' para el dia ' + calendario + '. El registro se realizo el ' + today + '' )
 
 };
