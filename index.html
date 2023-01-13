@@ -10,11 +10,10 @@
   </head>
   <body>
     <header>
-      <button class="button" onclick="sacarTurno();"> Solicitar turno </button>
     </header>
 
     <main>
-      <form action="" class="formulario">
+      <form action="" class="formulario" id="formulario">
         <h1>Solicitar turno</h1>
         <input placeholder="Nombre" type="text" id="inputNombre" class="formulario_input"> 
         <input placeholder="Apellido" type="text" id="inputApellido" class="formulario_input">
@@ -38,14 +37,25 @@
             <option value="tarde">Tarde</option>
           </select>
         </div>
-        <input type="submit" id="RegistrarTurno" class="formulario_submit">
+        <button>Solicitar Turno</button>
+      </form> <br>
 
+      <div class="estiloMostrar">
+        <h3 class="formulario_titulo">Ver turnos registrados</h3>
         
-      </form>
-    </main>
+        <div class="containerU">
+          <button id="verFechas">VER FECHAS OCUPADAS</button>
+          <button id="verTurnos">VER TURNOS OCUPADOS</button>
+          <button id="eliminarTurnos" class="botonEliminarTurnos">Eliminar Turnos</button>
+        </div>
 
+      </div>
+      <div id="containerMostrarFO" class="estiloMostrar"></div>
+        <div id="containerMostrarTurnos" class="estiloMostrar" ></div>
+    </main>
     <footer>       
     </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
     <script src="js/formulario.js"></script>
   </body>
 
