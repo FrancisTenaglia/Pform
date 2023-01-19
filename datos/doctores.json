@@ -1,0 +1,52 @@
+{ 
+    "doctores": [
+        {   
+            "documento": 11111111,
+            "nombre" : "Juan Carlos Perez",
+            "area": "Guardia",
+            "turno":"Tarde"
+        },
+        {
+            "documento": 22222222,
+            "nombre" : "Carlos Martinez",
+            "area": "Guardia",
+            "turno":"Mañana"
+        },
+        {
+            "documento": 33333333,
+            "nombre" : "Sofia Gros",
+            "area": "Guardia",
+            "turno":"Tarde"
+        },
+        {
+            "documento": 44444444,
+            "nombre" : "Mariquena Zunsain",
+            "area": "Guardia",
+            "turno":"Mañana"
+        },
+        {
+            "documento": 55555555,
+            "nombre" : "Francis Tenaglia",
+            "area": "Cardiología",
+            "turno":"Tarde"
+        },
+        {
+            "documento": 66666666,
+            "nombre" : "Gustavo Vega",
+            "area": "Cardiología",
+            "turno":"Tarde"
+        },
+        {   
+            "documento": 77777777,
+            "nombre" : "Olivia Perez",
+            "area": "Cardiología",
+            "turno":"Mañana"
+        },
+        {
+            "documento": 88888888,
+            "nombre" : "Manchita Gonzales",
+            "area": "Cardiología",
+            "turno":"Mañana"
+        }       
+    ]
+}

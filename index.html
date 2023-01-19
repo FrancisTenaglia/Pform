@@ -15,46 +15,50 @@
     <main>
       <form action="" class="formulario" id="formulario">
         <h1>Solicitar turno</h1>
-        <input placeholder="Nombre" type="text" id="inputNombre" class="formulario_input"> 
-        <input placeholder="Apellido" type="text" id="inputApellido" class="formulario_input">
-        <input placeholder="Documento" type="number" id="inputID" class="formulario_input">
+        <input placeholder="Nombre" type="text" id="inputNombre" class="formulario_input" required> 
+        <input placeholder="Apellido" type="text" id="inputApellido" class="formulario_input" required>
+        <input placeholder="Documento" type="number" id="inputID" class="formulario_input" min="0" required>
         <h3 class="formulario_titulo">Seleccione el area</h3>
         <div class="container_areas">
           <select name="area" id="area">
             <option value="Guardia">Guardia</option>
             <option value="Cardiología">Cardiología</option>
-            <option value="Oftalmología">Oftalmología</option>
-            <option value="Ginecología">Ginecología</option>
             <option value="Dermatología">Dermatología</option>
           </select>
         </div>
         <div class="container_turnos">
           <h3 class="formulario_titulo">Fecha y horario</h3>
           <label for="calendario"></label>
-          <input type="date" id="calendario" name="trip-start" min="2023-01-01" max="2023-12-31">
+          <input type="date" id="calendario" name="trip-start" min="2023-01-01" max="2023-12-31" required>
           <select name="turno" id="turno">
-            <option value="mañana">Mañana</option>
-            <option value="tarde">Tarde</option>
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
           </select>
         </div>
         <button>Solicitar Turno</button>
+        <h3 class="formulario_titulo">Ver turnos registrados</h3>
+        <button id="verFechas">VER FECHAS OCUPADAS</button>  
+        <!--     <input type="submit" id="RegistrarTurno" class="formulario_submit">    -->
       </form> <br>
 
-      <div class="estiloMostrar">
-        <h3 class="formulario_titulo">Ver turnos registrados</h3>
-        
-        <div class="containerU">
-          <button id="verFechas">VER FECHAS OCUPADAS</button>
-          <button id="verTurnos">VER TURNOS OCUPADOS</button>
-          <button id="eliminarTurnos" class="botonEliminarTurnos">Eliminar Turnos</button>
+      <div id="containerMostrarFO"></div>
+      
+      <form class="formulario">
+        <h1>Ingresar con ADMIN</h1>
+        <input placeholder="NombreADMIN" type="text" id="inputNombreAdmin" class="formulario_input" required>
+        <input placeholder="DocumentoADMIN" type="number" id="inputIDAdmin" class="formulario_input" required>
+        <div>
+          <button id="botonIngresoAdmin">Ingresar</button>
+          <button id="verTurnos" class="botonesDeAdmin">VER TURNOS OCUPADOS</button>         
+          <button id="eliminarTurnos" class="botonesDeAdmin">Eliminar Turnos</button>
         </div>
-
-      </div>
-      <div id="containerMostrarFO" class="estiloMostrar"></div>
-        <div id="containerMostrarTurnos" class="estiloMostrar" ></div>
+      </form>
+      <div id="containerMostrarTurnos"></div>
     </main>
+
     <footer>       
     </footer> 
+    <!--<script src="js/agenda.js"></script>  En este JS esta el codigo que se fue deshusando!!!!!  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
     <script src="js/formulario.js"></script>
   </body>
