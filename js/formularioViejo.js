@@ -13,6 +13,7 @@ for(let i=0; i < doctores.length; i++) {
 
 
 //Registro del paciente
+
 let today = new Date();
 const registro = [];
 const cantidad = 1;

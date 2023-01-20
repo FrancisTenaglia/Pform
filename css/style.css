@@ -75,3 +75,6 @@ label {
 .botonesDeAdmin{
     display: none;
 }
+.contenedorAdmin{
+    margin:10px
+}

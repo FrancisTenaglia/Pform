@@ -1,4 +1,4 @@
-// Esta parte del codigo es la nueva, utilizando JSON y Storage con eventos, el resto comentado, fueron entregadas en proyecto anterior. Por eso la etiqueta de agenda.js en el HTML esta comentada.
+// Esta parte del codigo es la nueva, utilizando JSON y Storage con eventos, el resto comentado, fueron entregadas en proyecto anterior. Por eso la etiqueta de formularioViejo.JS no esta añadida
 
 
 //Constantes y variables
